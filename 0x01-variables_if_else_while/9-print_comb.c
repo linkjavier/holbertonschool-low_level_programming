@@ -8,14 +8,14 @@
 
 int main(void)
 {
-int c = '0';
-while (c != '9')
+int c;
+for (c = '0'; c <= '9'; ++c)
 {
 putchar(c);
-putchar(44);
-putchar(32);
-++c;
+if (c != '9')
+putchar (44);
+putchar (32);
 }
-putchar(c);
+putchar ('\n');
 return (0);
 }
