@@ -13,8 +13,11 @@ for (c = '0'; c <= '9'; ++c)
 {
 putchar(c);
 if (c != '9')
+{
 putchar (44);
 putchar (32);
 }
+}
+putchar ('\n');
 return (0);
 }
