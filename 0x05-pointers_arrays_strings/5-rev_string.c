@@ -8,12 +8,25 @@
 
 void rev_string(char *s)
 {
-	int i;
-	char aux[];
-	
+	int i = 0;
+	int j;
+
 	while (*(s + i) != 0)
 	{
-		i++;
+		i++; //The size of s
 	}
-	while (i >= 0);
-
+	char aux[i]; //Create aux[i] array to save the reverse S
+	j = 0;
+	--i;
+	while (i >= 0)
+	{
+		*(aux + j) = *(s + i);
+		j++;
+		i--;
+	}
+	while (j >= 0)
+	{
+		*(s + i) = *(aux + j);
+		j--;
+	}
+}
