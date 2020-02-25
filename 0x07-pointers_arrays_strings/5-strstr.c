@@ -3,6 +3,9 @@
 /**
  * _strstr - Function that locates a substring.
  *
+ * @haystack: Address of s String.
+ * @needle: Address of a String.
+ *
  * Return: Always 0.
  */
 
