@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (needle[i] == haystack[j])
 			{
-				x = 0;
+				x = 0; // When the two strings are equal, set x to 0.
 				break;
 			}
 			else
