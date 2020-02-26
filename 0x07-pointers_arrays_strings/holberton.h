@@ -8,8 +8,12 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
+<<<<<<< HEAD
 void print_chessboard(char (*a)[8]);
 int _putchar(char c);
+=======
+char *_strstr(char *haystack, char *needle);
+>>>>>>> 6742a902026df10f21ca7799dfee189c4301ee91
 
 #endif /* HOLBERTON_H */
 
