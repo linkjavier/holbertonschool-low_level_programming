@@ -1,21 +1,35 @@
 #include "holberton.h"
 
-int fact(int n);
+/**
+ * is_prime_number - Checks if n  is prime
+ * @n: An int to be checked
+ *
+ * Return: 1 if n is prime, 0 otherwise
+ */
 
 int is_prime_number(int n)
 {
-	if (n == 1)
+	if (n <= 1)
 		return (0);
-	else if (((fact(n-1) + 1) % n) == 0)
-		return (1);
-	else return (0);
+	return (check(n, 2));
 }
 
-int fact(int n)
+/**
+ * check - Check the module.
+ * @a: int
+ * @x: int to check the module
+ *
+ * Return: 1 if num is prime, 0 otherwise
+ */
+
+int check(int a, int x)
 {
-	if(n < 0)
-		return (-1);
-	if (n == 0)
-		return (1);
-	return (n * fact(n - 1));
+	if (a % x == 0)
+	{
+		if (x == a)
+			return (1);
+		else
+			return (0);
+	}
+	return (check(a, x + 1));
 }
