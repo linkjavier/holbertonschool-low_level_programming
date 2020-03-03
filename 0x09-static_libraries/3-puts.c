@@ -12,7 +12,11 @@ void _puts(char *str)
 
 	while (*(str + i) != '\0')
 	{
+<<<<<<< HEAD
 		_putchar(*(str + i));
+=======
+		_putchar(*(str + i) + '\0');
+>>>>>>> 68f6fdbd0934c5d290d9690e0998799e5dd59a54
 		i++;
 	}
 	_putchar('\n');
