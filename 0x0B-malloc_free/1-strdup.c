@@ -35,5 +35,6 @@ char *_strdup(char *str)
 			return (str2);
 		}
 	}
+	free(str2);
 }
 
