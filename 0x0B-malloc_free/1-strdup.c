@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strdup - Function that copy a string and return a pointer to the new string
@@ -13,28 +12,23 @@
 char *_strdup(char *str)
 {
 	char *str2;
-	unsigned int i;
+	int i, j;
 
-	if (str == NULL)
+
+	for (i = 0; str[i] ; i++)
+	{}
+
+	str2 = malloc(sizeof(char) * i);
+
+	if (str2 == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
-		str2 = malloc(sizeof(char) * strlen(str));
-		if (str2 == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
-			for (i = 0 ; i < strlen(str) ; i++)
-			{
-			str2[i] = str[i];
-			}
-			return (str2);
-		}
-	}
-	free(str2);
-}
 
+	for (j = 0; j < i ; j++)
+	{
+		str2[j] = str[j];
+	}
+	str2[j] = '\0';
+	return (str2);
+}
