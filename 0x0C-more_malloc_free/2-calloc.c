@@ -3,11 +3,10 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - Function that concatenates two strings.
+ * _calloc - Function that allocates memory for an array.
  *
- * @s1: Adress to String.
- * @s2: Adress to String.
- * @n: unsigned int that indicates the n bytes of s2 to concatenate.
+ * @nmemb: Adress to String.
+ * @size: Adress to String.
  *
  * Return: The pointer s3
  */
