@@ -6,9 +6,9 @@
  *
  * @s1: Adress to String.
  * @s2: Adress to String.
- * @n: unsigned int that indicates the n bytes of s2 to concatenate. 
+ * @n: unsigned int that indicates the n bytes of s2 to concatenate.
  *
- * Return: The pointer p
+ * Return: The pointer s3
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -20,10 +20,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (s1size = 0 ; s1[s1size] ; s1size++)
+	for (s1size = 0 ; s1[s1size]; s1size++)
 	{}
-	for (s2size = 0 ; s2[s2size] ; s2size++)
-        {}
+	for (s2size = 0 ; s2[s2size]; s2size++)
+	{}
 	s3 = malloc(s1size + s2size);
 	if (s3 == NULL)
 		return (NULL);
