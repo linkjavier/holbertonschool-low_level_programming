@@ -32,9 +32,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		else
 			return (ptr2);
 	}
-	ptr2 = malloc(new_size);
-		if (ptr2 == NULL)
-			return (NULL);
+	if (new_size > old_size)
+	{
+		ptr2 = malloc(new_size);
+			if (ptr2 == NULL)
+				return (NULL);
+	}
 	for (i = 0; i < new_size; i++)
 		ptr2[i] = ptr3[i];
 	free(ptr);
