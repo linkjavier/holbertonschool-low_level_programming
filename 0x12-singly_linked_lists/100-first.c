@@ -2,15 +2,15 @@
 void startupfun(void) __attribute__ ((constructor));
 
 /**
- * startupfun - check the code for Holberton School students.
+ * startupfun - Function that prints a text of a story
  *
  * Return: Always 0.
  */
 
 void startupfun(void)
 {
-	char *temp;
+	char *str;
 
-	temp = "I bore my house upon my back!\n";
-	printf("You're beat! and yet, you must allow,\n%s", temp);
+	str = "I bore my house upon my back!\n";
+	printf("You're beat! and yet, you must allow,\n%s", str);
 }
