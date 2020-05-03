@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
+ * dlistint_len - Function that returns the number of elements
+ * @h: Address to doubly linked list
+ * Return: number of nodes i
  */
 
 size_t dlistint_len(const dlistint_t *h)
