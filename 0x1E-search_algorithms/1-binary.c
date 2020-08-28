@@ -3,7 +3,7 @@
 
 /**
  * binary_search - Function that searches for a value in an array
- * of integers using the Linear search algorithm.
+ * of integers using the Binary search algorithm.
  * @array: Pointer to the first element of the array to search in
  * @size: The size of the array.
  * @value: Value to search for.
