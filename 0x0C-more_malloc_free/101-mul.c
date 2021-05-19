@@ -82,10 +82,8 @@ int ArgLenght(char *argv[], int n)
  * factor2 > fc2
  * ProductSize > ps
  * product > prd
- * 
  * @argc: Number of argumnets.
  * @argv: The arguments.
- *
  * Return: 0.
  */
 
